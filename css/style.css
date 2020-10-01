@@ -1,0 +1,131 @@
+body {
+    width: 100%;
+	background: url(../img/12_col.gif) center top repeat-y;
+    background-size: 90%;
+    
+}
+.box,.main, .footer{
+    margin: 10px;
+    height: 200px;
+    border: 2px solid black;
+    
+   
+}
+
+.header,.boxwrapper, .footerwrapper, .contentwrapper{
+    width:89%;
+    box-sizing: border-box;
+    margin:10px;
+    margin-left:5%;
+    margin-top:1%;
+}
+.boxset{
+    
+    height: 200px;
+    border: 2px solid black;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+.mainset{ 
+    height: 200px;
+    border: 2px solid black;
+    margin-left: 20px;
+
+}
+.box,.main{
+    box-sizing: border-box;
+    margin:0px;
+    
+}
+.header {
+    display: grid;
+	grid-template-columns: 1fr;
+    height: 200px;
+	border: 2px solid black;
+	
+}
+
+
+.boxwrapper{
+     display: grid;
+	grid-template-columns: 1fr 4fr 1fr; 
+}
+
+
+.center-text{
+    text-align: center;
+}
+
+.contentwrapper{
+    display: grid;
+	grid-template-columns: 3fr 1fr;
+	
+}
+.footerwrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: solid 2px black;
+	
+}
+
+.footer{
+	border: solid black 2px;
+
+}
+
+
+@media only screen and (max-width: 1200px){
+    .boxwrapper{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr; 
+        }
+        .contentwrapper{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+        }
+    }
+    @media only screen and (max-width: 960px){
+        .boxwrapper{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr; 
+            }
+            .contentwrapper{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+            .footerwrapper{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media only screen and (max-width: 768px){
+            .boxwrapper{
+                display: grid;
+                grid-template-columns: 1fr; 
+                }
+                .contentwrapper{
+                    display: grid;
+                    grid-template-columns: 1fr;
+                }
+                .footerwrapper{
+                    display: grid;
+                    grid-template-columns: 1fr;
+            
+                }
+                .boxset,.mainset{
+                    margin-left:0px;
+                    margin-right: 0px;
+                    margin-top:10px;
+
+                }
+                .boxset{
+                    margin-bottom:10px;
+                }
+                .boxwrapper,.contentwrapper,.footerwrapper{
+                    margin-bottom: 10px;
+
+                }
+                
+
+            }
